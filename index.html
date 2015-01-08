@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Effective population size in insects</title>
+
+  <link rel="stylesheet" href="vendors/revealjs/css/reveal.css">
+  <link rel="stylesheet" href="vendors/revealjs/css/print/reveal-like-pdf.css">
+  <link rel="stylesheet" href="vendors/Font-Awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="theme/style.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+      
+<section data-state=front>
+<h2 id="effective-population-size-in-insects">Effective population size in insects</h2>
+<p><p style="float: left;"><a href="//bmpvieira.com/pgg48" target="_blank">bmpvieira.com/pgg48</a></p>
+<br></p>
+<div class="">
+<img style="width: 30%; float: right; padding-right: 1em;" alt="bmpvieira" src="img/bmpvieira.png" />
+<p>
+<a href="http://bmpvieira.com">Bruno Vieira</a> | <i class="fa fa-twitter"></i> <a href="//twitter.com/bmpvieira" target="_blank">@bmpvieira</a>
+</p>
+</div>
+
+<div class="">
+<p class="">Phd Student @ <a href="http://www.qmul.ac.uk" target="_blank"><img style="width: 25%; float: right; padding-right: 1em;" alt="QMUL" src="img/Queen_Mary,_University_of_London_logo.svg" /></a>
+</p>
+<p class="">
+Bioinformatics and Population Genomics
+</p>
+<span style="font-size:0.8em;">
+<p class="">
+Supervisor:<br>Yannick Wurm | <i class="fa fa-twitter"></i>  <a href="//twitter.com/yannick__" target="_blank">@yannick__</a>
+</p>
+</span>
+</div>
+
+<p></small></p>
+<div style="position:absolute; top: 90%; font-size:.35em;">
+© 2014 <a href="http://bmpvieira.com" target="_blank">Bruno Vieira</a> <a href="http://creativecommons.org/licenses/by/4.0/deed.en_US" target="_blank">CC-BY 4.0</a>
+</div>
+
+
+</section>
+
+<section>
+<h3 id="number-of-individuals-vs-effective-pop-size">Number of Individuals vs Effective Pop. Size</h3>
+<p><a href="http://allaroundwaldo.com/wp-content/uploads/2013/10/Giant-ant-colony.jpg
+">
+<img src="img/Giant-ant-colony.jpg" style="width: 40%; padding-right: 1em;" alt="giant nest 1"/>
+</a>
+<a href="http://1.bp.blogspot.com/-gDQaElASIoI/TXTiCkEwXpI/AAAAAAAAnZw/oNMU0qMnI2o/s1600/a1.PNG">
+<img src="img/a1.PNG" style="width: 35%; padding-right: 1em;" alt="giant nest 2"/>
+</a>
+<a href="http://www.foxnews.com/science/2013/01/17/fire-ant-monarchy-ruled-by-social-chromosome/">
+<img style="width: 40%; padding-right: 1em;" alt="queen ant" src="img/fire-ant-queen.jpg" />
+</a>
+<a href="http://www.queenbeeremoval.com/wp-content/uploads/queen-bee.jpg">
+<img style="width: 30%; padding-right: 1em;" alt="queen bee" src="img/queen-bee.jpg" />
+</a></p>
+</section>
+
+<section>
+<p><img style="width: 70%; padding-right: 1em;" alt="lipsmc" src="img/lipsmc.png" />
+<br>
+<a href="http://doi.org/10.1038/nature10231">Li 2011</a></p>
+</section>
+
+<section>
+<h3 id="dictyoptera">Dictyoptera</h3>
+<p><img style="width: 100%; padding-right: 1em;" alt="dictyoptera" src="img/psmc-dictyoptera-poster.svg" /></p>
+</section>
+
+<section>
+<h3 id="goal">Goal</h3>
+<p>Run PSMC across a wide range of social insects and their solitary relatives</p>
+<p><img src="img/WeaverAntDefense.JPG" alt="From: http://upload.wikimedia.org/wikipedia/commons/8/85/WeaverAntDefense.JPG" style="max-width: 25%" />
+<img src="img/Honeybee_landing_on_milkthistle02.jpg" alt="From: http://upload.wikimedia.org/wikipedia/commons/e/e0/Honeybee_landing_on_milkthistle02.jpg" style="max-width: 23%" /></p>
+<p><img src="img/Coptotermes_formosanus_shiraki_USGov_k8204-7.jpg" alt="From: http://upload.wikimedia.org/wikipedia/commons/d/d3/Coptotermes_formosanus_shiraki_USGov_k8204-7.jpg" style="max-width: 16%" />
+<img src="img/Bush_Cockroach.jpg" alt="From: http://upload.wikimedia.org/wikipedia/commons/c/ca/Bush_Cockroach.jpg" style="max-width: 32%" /></p>
+</section>
+
+<section>
+<p><a href="http://noflojs.org"></p>
+<p><section data-background="img/noflo.png"></section>
+</a></p>
+</section>
+
+<section>
+<p><strong><a href="http://bionode.io">Bionode.io</a></strong> <span class="" style="font-size: .8em;"> - <em>Modular and universal bioinformatics</em></span>
+<img style="width: 20%;float: right; padding-right: 1em;" alt="bionode" src="img/bionode-logo.svg" /></p>
+<p><span class="" style="font-size: .7em; line-height:10%;">Pipeable UNIX command line tools and JavaScript / Node.js APIs for bioinformatic analysis workflows on the server and browser.
+<a class="" href="http://irccloud.com/#!/ircs://irc.freenode.net:6697/%23bionode">#bionode</a>
+<br>
+<a class="" href="http://gitter.im/bionode/bionode">gitter.im/bionode/bionode</a></p>
+<div style="padding-bottom:1em;"></div>
+
+<div class="fragment">
+<img style="width: 19%;float: left; padding-right: .5em;" alt="dat" src="img/dat.png" />
+<p><strong><a href="http://dat-data.com">Dat-data.com</a> </strong> - <span style="font-size: .8em;"><em>Build data pipelines</em></p></span>
+
+<span style="font-size: .7em; line-height:10%;"><p>Provides a streaming interface between every file format and data storage backend. <em>&quot;git for data&quot;</em>
+<br>
+<a class="" href="http://irccloud.com/#!/ircs://irc.freenode.net:6697/%23dat">#dat</a>
+<br>
+<a class="" href="http://gitter.im/datproject/discussions">gitter.im/datproject/discussions</a>
+</p>
+<br>
+
+</span>
+
+<br>
+
+</div>
+
+</section>
+
+<section>
+<!-- <a href="http://dat-ncbi-arthropods-summary.inb.io" target="_blank">
+<section data-background="img/dat-arthropod.png"></section>
+</a>
+
+--- -->
+
+<h3 id="thanks-">Thanks!</h3>
+<p>Acknowledgements:</p>
+<p><img style="width: 5%;" src="img/yannick__.jpg" />
+<i class="fa fa-twitter"></i> <a href="http://twitter.com/yannick__">@yannick__</a><br><img style="width: 5%;" src="img/maxogden.jpg" />
+<i class="fa fa-twitter"></i> <a href="http://twitter.com/maxogden">@maxogden</a><br><img style="width: 5%;" src="img/mafintosh.jpg" />
+<i class="fa fa-twitter"></i> <a href="https://twitter.com/mafintosh">@mafintosh</a><br><img style="width: 5%;" src="img/erikgarrison.jpg" />
+<i class="fa fa-twitter"></i> <a href="http://twitter.com/erikgarrison">@erikgarrison</a>  </p>
+<p><img style="width: 5%;" src="img/sbcs-qmul.jpg" />
+<i class="fa fa-twitter"></i> <a href="https://twitter.com/QM_SBCS">@QM_SBCS</a><br><img style="width: 5%;" src="img/dat.png" />
+<i class="fa fa-twitter"></i> <a href="https://twitter.com/dat_project">@dat_project</a><br><img style="width: 5%;" src="img/bionode-twitter.png" />
+<i class="fa fa-github"></i> <a href="http://bionode.io">Bionode contributors<br>
+<img style="height: 5%;" src="img/bionode-contributors.png" /></a></p>
+</section>
+
+<section>
+
+</section>
+
+    </div>
+  </div>
+
+<script src="vendors/jquery-1.11.0.min.js"></script>
+
+<!-- reveal -->
+<script src="vendors/revealjs/lib/js/head.min.js"></script>
+<script src="vendors/revealjs/js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+
+    // Display controls in the bottom right corner
+    controls: false,
+
+    // Display a presentation progress bar
+    progress: true,
+
+    // Display a subtle timer bar (time is in minutes)
+    timeRemaining: 15,
+
+    // Push each slide change to the browser history
+    history: true,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Vertical centering of slides
+    center: false,
+
+    // Loop the presentation
+    loop: false,
+
+    // Change the presentation direction to be RTL
+    rtl: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 0,
+
+    // Enable slide navigation via mouse wheel
+    mouseWheel: false,
+
+    // Apply a 3D roll to links on hover
+    rollingLinks: false,
+
+    // Transition style
+    transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    dependencies: [
+        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+        { src: 'vendors/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+        // Interreveal/pret Markdown in <section> elements
+    { src: 'vendors/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'vendors/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); }, callback: function() { baconDemo() } },
+
+        // Syntareveal/x highlight for <code> elements
+          { src: 'vendors/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom reveal/in and out with Alt+click
+          { src: 'vendors/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+          // Speakreveal/er notes
+          { src: 'vendors/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+          // Remotreveal/e control your reveal.js presentation using a touch device
+          // { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+
+          });
+    </script>
+</body>
